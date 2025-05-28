@@ -1,0 +1,372 @@
+/*Hoja de estilos*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family:"Almendra", serif;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+h1 {
+    font-family: "New Rocker", system-ui;
+    font-size: 60px;
+    color:#d4d2d2;
+}
+
+.titulo{
+    font-family: "New Rocker", system-ui;
+    font-size: 60px;
+    color: #d4d2d2;
+    margin: 0;
+}
+
+.h1-clase:hover{
+    color: black;
+    transition: background-color 0.3s;
+}
+
+
+h2 {
+    font-family:"Almendra", serif;
+    font-size: 30px;
+    font-style: normal;
+    color: #413e3e;
+
+}
+
+.logo {
+    margin: 50px ;
+    height: auto;
+    margin: 0;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#413e3e ;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 3px 6px black; /*valor para eje x, valor eje y y valor blur*/
+    gap: 10px;
+    unicode-bidi: isolate;
+}
+
+
+/*enlaces*/
+
+.nav{
+    height: auto;
+    margin-right: 3%;
+}
+
+nav {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.lista {
+    display: flex; 
+    justify-content: center; /*centra*/
+    gap: 20px; /*Espacio entre items*/
+    list-style: none; /*Elimino viñetas*/
+    padding: 0; /*Quita el espacio interno predeterminado del ul*/
+    margin: 20px 0;/* Agrega margen arriba y abajo del ul*/
+    unicode-bidi: isolate;
+}
+
+.lista li a {
+    font-family: "New Rocker", system-ui;
+    color:#d4d2d2;
+    text-decoration: none; /*saca el subayado del link*/
+    font-weight: bold; /*resalta texto*/
+    padding: 8px 12px; /*Agrega espacio interno al rededor del link*/
+    border-radius: 5px; /*Redondea las esquinas de la caja.*/
+    transition: background-color 0.3s; /*Hace que el cambio de color al pasar el mouse sea suave (animado).*/
+}
+
+
+.lista li a:hover {
+    background-color: #d0d0d0; /*Cambia el color de fondo cuando el usuario pasa el mouse sobre la caja.*/
+    color: black;
+}
+
+.lista li a img {
+    transition: filter 0.3s ease;
+}
+
+.lista li a:hover img {
+    filter: brightness(0) saturate(100%);
+}
+
+.lista-productos{
+    display: flex; 
+    justify-content: center;
+    gap: 20px; 
+    list-style: none; 
+    padding: 0; 
+    margin: 20px 0;
+    unicode-bidi: isolate;
+}
+
+.lista-productos a {
+    font-family: "Almendra", serif;
+    font-size: 20px;
+    color:#413e3e;
+    text-decoration: none; /*saca el subayado del link*/
+    font-weight: bold; /*resalta texto*/
+    padding: 8px 12px; /*Agrega espacio interno al rededor del link*/
+    border-radius: 5px; /*Redondea las esquinas de la caja.*/
+    transition: background-color 0.3s;
+    cursor: pointer;
+
+}
+
+.lista-productos a:hover {
+    color:  #a3a3a3;
+    
+}
+
+
+.p1{
+    font-family: "New Rocker", system-ui;
+    font-size: 60px;
+    color:#504f4f;
+    text-decoration: none;    
+}
+
+
+.vueltaInicio {
+    font-family: "New Rocker", system-ui;
+    color: #a3a3a3; 
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: color 0.3s;
+}
+
+.vueltaInicio:hover {
+    color: black; /*el color que cambia al pasar el mouse */
+}
+
+footer {
+    background-color: #413e3e;
+}
+
+.p-footer{
+    color:#d4d2d2;
+
+}
+
+.email{
+    color: #d4d2d2; 
+    text-decoration: none;
+}
+
+.fa-instagram {
+    font-size: 32px;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    border: 5px solid black;
+    height: auto;
+    z-index: 20;
+}
+
+
+
+.grilla {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr)); 
+    gap: 20px;
+    place-items: center;
+    padding: 20px;
+
+}
+
+
+
+.item-grid {
+    display: grid;
+    place-items: center;
+    text-align:center;
+    width: 100%;
+
+}
+
+.item-grid img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.item-grid img:hover {
+    transform: scale(1.05);  /* Efecto de zoom */
+}
+
+.grilla-resenas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    }
+
+    .grilla-resenas .item-grid {
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 300px;
+    background-color: #fdfdfd;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: "Almendra", serif;
+    color: #3a3a3a;
+    }
+
+button{
+    font-family: "Almendra", serif;
+    font-size: 1rem;             /* Tamaño de letra */
+    padding: 10px 20px;          /* Relleno interno */
+    border: none;                /* Quitar borde */
+    border-radius: 8px;
+    color:#413e3e;
+    background-color:#d4d2d2;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+
+}
+
+button:hover {
+    background-color: #ecfceac9;
+    color: #000;
+    transform: scale(1.1) rotate(-1deg);
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario-container {
+    max-width: 500px;         
+    margin: 0 auto;           
+    padding: 20px;           
+    background-color:#413e3e;
+    border-radius: 12px;      
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+}
+
+/*TEXTO Y EMAIL FORMULARIO*/
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-family: "Almendra", serif;
+    font-size: 1rem;
+    box-sizing: border-box;
+    border-radius: 8px;
+    resize: vertical; 
+}
+
+/*BOTONES FORMULARIO*/
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px;
+    font-family: "Almendra", serif ;
+    font-size: 1rem;
+    background-color: white;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    align-self: center;  
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #555;
+}
+
+
+@media (max-width: 767px) {
+    header {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .logo {
+        margin: 10px;
+        flex: 0 1 auto;
+    }
+
+    .logo img {
+        width: 80px;
+        height: auto;
+    }
+
+    .titulo {
+        font-size: 36px;
+    }
+
+    .nav {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .lista {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .lista li a {
+        font-size: 14px;
+        padding: 6px 10px;
+
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        font-size: 0.9rem;
+    }
+}
+
+    
