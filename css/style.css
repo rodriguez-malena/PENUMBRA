@@ -53,7 +53,7 @@ header{
     background-color:#413e3e ;
     position: sticky;
     top: 0;
-    box-shadow: 0px 3px 6px black; /*valor para eje x, valor eje y y valor blur*/
+    box-shadow: 0px 3px 6px black; 
     gap: 10px;
     unicode-bidi: isolate;
 }
@@ -83,27 +83,27 @@ ul {
 
 .lista {
     display: flex; 
-    justify-content: center; /*centra*/
-    gap: 20px; /*Espacio entre items*/
-    list-style: none; /*Elimino viñetas*/
-    padding: 0; /*Quita el espacio interno predeterminado del ul*/
-    margin: 20px 0;/* Agrega margen arriba y abajo del ul*/
+    justify-content: center; 
+    gap: 20px; 
+    list-style: none; 
+    padding: 0; 
+    margin: 20px 0;
     unicode-bidi: isolate;
 }
 
 .lista li a {
     font-family: "New Rocker", system-ui;
     color:#d4d2d2;
-    text-decoration: none; /*saca el subayado del link*/
-    font-weight: bold; /*resalta texto*/
-    padding: 8px 12px; /*Agrega espacio interno al rededor del link*/
-    border-radius: 5px; /*Redondea las esquinas de la caja.*/
-    transition: background-color 0.3s; /*Hace que el cambio de color al pasar el mouse sea suave (animado).*/
+    text-decoration: none; 
+    font-weight: bold; 
+    padding: 8px 12px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
 }
 
 
 .lista li a:hover {
-    background-color: #d0d0d0; /*Cambia el color de fondo cuando el usuario pasa el mouse sobre la caja.*/
+    background-color: #d0d0d0; 
     color: black;
 }
 
@@ -129,10 +129,10 @@ ul {
     font-family: "Almendra", serif;
     font-size: 20px;
     color:#413e3e;
-    text-decoration: none; /*saca el subayado del link*/
-    font-weight: bold; /*resalta texto*/
-    padding: 8px 12px; /*Agrega espacio interno al rededor del link*/
-    border-radius: 5px; /*Redondea las esquinas de la caja.*/
+    text-decoration: none; 
+    font-weight: bold; 
+    padding: 8px 12px; 
+    border-radius: 5px; 
     transition: background-color 0.3s;
     cursor: pointer;
 
@@ -163,7 +163,7 @@ ul {
 }
 
 .vueltaInicio:hover {
-    color: black; /*el color que cambia al pasar el mouse */
+    color: black; 
 }
 
 footer {
@@ -222,7 +222,7 @@ footer {
 }
 
 .item-grid img:hover {
-    transform: scale(1.05);  /* Efecto de zoom */
+    transform: scale(1.05); 
 }
 
 .grilla-resenas {
@@ -246,9 +246,9 @@ footer {
 
 button{
     font-family: "Almendra", serif;
-    font-size: 1rem;             /* Tamaño de letra */
-    padding: 10px 20px;          /* Relleno interno */
-    border: none;                /* Quitar borde */
+    font-size: 1rem;            
+    padding: 10px 20px;          
+    border: none;              
     border-radius: 8px;
     color:#413e3e;
     background-color:#d4d2d2;
